@@ -11,7 +11,7 @@ const CartModel = () => {
         <div className="">Cart is Empty</div>
       ) : (
         <>
-          <h2 className="text-xl font-[500]">Shopping Cart</h2>
+          <h2 className="text-xl font-[600]">Shopping Cart</h2>
           {/* // LIST */}
           <div className="flex flex-col gap-8">
             {/* ITEM */}

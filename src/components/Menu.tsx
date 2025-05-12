@@ -17,7 +17,7 @@ const Menu = () => {
         onClick={() => setOpen((prev) => !prev)}
       />
       {open && (
-        <div className="absolute bg-white text-black left-0 top-20 w-full h-[calc(62vh-80px)] flex flex-col pl-7 justify-center gap-8 text-xl shadow-xl z-10 transition-all-duration-2000 ease-in-out">
+        <div className="absolute bg-white text-black left-0 top-20 w-full h-[calc(62vh-80px)] flex flex-col pl-7 justify-center gap-8 text-xl shadow-xl z-10">
           <Link href="/">
             <span className="flex items-center gap-4">
               <svg
