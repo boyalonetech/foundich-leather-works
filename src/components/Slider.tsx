@@ -35,12 +35,12 @@ const slides = [
 const Slider = () => {
   const [current, setCurrent] = useState(0);
 
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setCurrent((current + 1) % slides.length);
-//     }, 3000);
-//     return () => clearInterval(interval);
-//   }, [current]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((current + 1) % slides.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [current]);
 
   return (
     <div className="h-[calc(100vh-80px)] overflow-hidden relative">
@@ -81,7 +81,7 @@ const Slider = () => {
         ))}
       </div>
 
-      {/* NAVIGATION DOTS - outside the slide loop */}
+      {/* NAVIGATION DOTS - Outside The Slide Loop */}
       <div className="absolute m-auto left-1/2 -translate-x-1/2 bottom-8 flex gap-4 z-10">
         {slides.map((_, index) => (
           <div
