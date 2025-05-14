@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="h-full flex items-center justify-between md:hidden">
         <div>
           <Link href="/">
-            <div className="text-2xl tracking-wide font-bold text-found">Foundich</div>
+            <div className="text-3xl tracking-wide font-bold text-found">Foundich</div>
           </Link>
         </div>
         <Menu />
@@ -19,14 +19,14 @@ const Navbar = () => {
       {/* BIGGER SCREEN */}
       <div className="hidden md:flex items-center h-full justify-between gap-8">
         {/* LEFT */}
-        <div className="w-1/3 xl:w-1/2 flex items-center gap-12">
+        <div className="w-1/3 xl:w-1/2 flex items-center gap-12 z-10">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo2.png" alt="logo" width={35} height={35} />
-            <div className="text-2xl tracking-wide font-bold  text-found">Foundich</div>
+            <Image src="/logo2.png" alt="logo" width={50} height={50} className="mt-2" />
+            <div className="text-3xl tracking-wide font-bold  text-found">Foundich</div>
           </Link>
           <nav className="hidden xl:flex gap-4">
             <Link href="/">Home</Link>
-            <Link href="/">Shop</Link>
+            <Link href="/list">Shop</Link>
             <Link href="/">Deals</Link>
             <Link href="/">About</Link>
             <Link href="/">Contact</Link>
