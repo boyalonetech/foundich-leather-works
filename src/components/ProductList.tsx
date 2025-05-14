@@ -6,9 +6,9 @@ const ProductList = () => {
     <div className="mt-12 mb-12 flex gap-x-8 gap-y-16 justify-between flex-wrap">
       <Link
         href="/test"
-        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
+        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%] shadow-[0_3px_5px_rgba(0,0,0,0.1)] p-4 rounded-2xl"
       >
-        <div className="relative w-full h-80">
+        <div className="relative w-full h-[35vh]">
           <Image
             src="https://images.pexels.com/photos/5632346/pexels-photo-5632346.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
@@ -35,9 +35,9 @@ const ProductList = () => {
       </Link>{" "}
       <Link
         href="/test"
-        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
+        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]   shadow-[0_3px_5px_rgba(0,0,0,0.1)] p-4 rounded-2xl"
       >
-        <div className="relative w-full h-80">
+        <div className="relative w-full h-[35vh]">
           <Image
             src="https://images.pexels.com/photos/5632346/pexels-photo-5632346.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
@@ -64,9 +64,9 @@ const ProductList = () => {
       </Link>{" "}
       <Link
         href="/test"
-        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
+        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]   shadow-[0_3px_5px_rgba(0,0,0,0.1)] p-4 rounded-2xl"
       >
-        <div className="relative w-full h-80">
+        <div className="relative w-full h-[35vh]">
           <Image
             src="https://images.pexels.com/photos/5632346/pexels-photo-5632346.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
@@ -93,9 +93,9 @@ const ProductList = () => {
       </Link>{" "}
       <Link
         href="/test"
-        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
+        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]   shadow-[0_3px_5px_rgba(0,0,0,0.1)] p-4 rounded-2xl"
       >
-        <div className="relative w-full h-80">
+        <div className="relative w-full h-[35vh]">
           <Image
             src="https://images.pexels.com/photos/5632346/pexels-photo-5632346.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
@@ -122,9 +122,9 @@ const ProductList = () => {
       </Link>{" "}
       <Link
         href="/test"
-        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
+        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]   shadow-[0_3px_5px_rgba(0,0,0,0.1)] p-4 rounded-2xl"
       >
-        <div className="relative w-full h-80">
+        <div className="relative w-full h-[35vh]">
           <Image
             src="https://images.pexels.com/photos/5632346/pexels-photo-5632346.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
@@ -148,11 +148,12 @@ const ProductList = () => {
         <button className="rounded-2xl ring-1 w-max ring-found text-found py-2 px-4 text-sm hover:bg-found hover:text-white  ">
           Add to Cart
         </button>
-      </Link>      <Link
+      </Link>{" "}
+      <Link
         href="/test"
-        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
+        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]   shadow-[0_3px_5px_rgba(0,0,0,0.1)] p-4 rounded-2xl"
       >
-        <div className="relative w-full h-80">
+        <div className="relative w-full h-[35vh]">
           <Image
             src="https://images.pexels.com/photos/5632346/pexels-photo-5632346.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
@@ -176,11 +177,12 @@ const ProductList = () => {
         <button className="rounded-2xl ring-1 w-max ring-found text-found py-2 px-4 text-sm hover:bg-found hover:text-white  ">
           Add to Cart
         </button>
-      </Link>      <Link
+      </Link>{" "}
+      <Link
         href="/test"
-        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
+        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]   shadow-[0_3px_5px_rgba(0,0,0,0.1)] p-4 rounded-2xl"
       >
-        <div className="relative w-full h-80">
+        <div className="relative w-full h-[35vh]">
           <Image
             src="https://images.pexels.com/photos/5632346/pexels-photo-5632346.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
@@ -204,11 +206,12 @@ const ProductList = () => {
         <button className="rounded-2xl ring-1 w-max ring-found text-found py-2 px-4 text-sm hover:bg-found hover:text-white  ">
           Add to Cart
         </button>
-      </Link>      <Link
+      </Link>
+      <Link
         href="/test"
-        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
+        className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]   shadow-[0_3px_5px_rgba(0,0,0,0.1)] p-4 rounded-2xl"
       >
-        <div className="relative w-full h-80">
+        <div className="relative w-full h-[35vh]">
           <Image
             src="https://images.pexels.com/photos/5632346/pexels-photo-5632346.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
