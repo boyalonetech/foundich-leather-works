@@ -9,10 +9,9 @@ const CategoryList = () => {
           href="/list?Cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-<div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
-
+          <div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
             <Image
-              src="https://images.pexels.com/photos/6613709/pexels-photo-6613709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/5d312b613039692258431863f7b5f3c0.jpg"
               alt=""
               fill
               sizes="20vw"
@@ -26,10 +25,9 @@ const CategoryList = () => {
           href="/list?Cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-<div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
-
+          <div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
             <Image
-              src="https://images.pexels.com/photos/6613709/pexels-photo-6613709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/5d312b613039692258431863f7b5f3c0.jpg"
               alt=""
               fill
               sizes="20vw"
@@ -43,10 +41,9 @@ const CategoryList = () => {
           href="/list?Cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-<div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
-
+          <div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
             <Image
-              src="https://images.pexels.com/photos/6613709/pexels-photo-6613709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/5d312b613039692258431863f7b5f3c0.jpg"
               alt=""
               fill
               sizes="20vw"
@@ -60,10 +57,9 @@ const CategoryList = () => {
           href="/list?Cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-<div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
-
+          <div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
             <Image
-              src="https://images.pexels.com/photos/6613709/pexels-photo-6613709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/5d312b613039692258431863f7b5f3c0.jpg"
               alt=""
               fill
               sizes="20vw"
@@ -77,10 +73,9 @@ const CategoryList = () => {
           href="/list?Cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-<div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
-
+          <div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
             <Image
-              src="https://images.pexels.com/photos/6613709/pexels-photo-6613709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/5d312b613039692258431863f7b5f3c0.jpg"
               alt=""
               fill
               sizes="20vw"
@@ -94,10 +89,9 @@ const CategoryList = () => {
           href="/list?Cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-<div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
-
+          <div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
             <Image
-              src="https://images.pexels.com/photos/6613709/pexels-photo-6613709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/5d312b613039692258431863f7b5f3c0.jpg"
               alt=""
               fill
               sizes="20vw"
@@ -111,10 +105,9 @@ const CategoryList = () => {
           href="/list?Cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-<div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
-
+          <div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
             <Image
-              src="https://images.pexels.com/photos/6613709/pexels-photo-6613709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/5d312b613039692258431863f7b5f3c0.jpg"
               alt=""
               fill
               sizes="20vw"
@@ -128,10 +121,9 @@ const CategoryList = () => {
           href="/list?Cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-<div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
-
+          <div className="relative bg-slate-100 w-full max-w-[400px] h-[300px] mx-auto">
             <Image
-              src="https://images.pexels.com/photos/6613709/pexels-photo-6613709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/5d312b613039692258431863f7b5f3c0.jpg"
               alt=""
               fill
               sizes="20vw"
