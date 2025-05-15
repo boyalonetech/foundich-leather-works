@@ -35,12 +35,12 @@ const slides = [
 const Slider = () => {
   const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((current + 1) % slides.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [current]);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrent((current + 1) % slides.length);
+  //   }, 3000);
+  //   return () => clearInterval(interval);
+  // }, [current]);
 
   return (
     <div className="h-[calc(100vh-80px)] overflow-hidden relative">
