@@ -17,7 +17,7 @@ const CartModel = () => {
             {/* ITEM */}
             <div className="flex gap-4 ">
               <Image
-                src="https://images.pexels.com/photos/3808229/pexels-photo-3808229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/5d312b613039692258431863f7b5f3c0.jpg"
                 alt=""
                 width={72}
                 height={96}
@@ -64,7 +64,7 @@ const CartModel = () => {
            {/* ITEM */}
             <div className="flex gap-4 ">
               <Image
-                src="https://images.pexels.com/photos/3808229/pexels-photo-3808229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/5d312b613039692258431863f7b5f3c0.jpg"
                 alt=""
                 width={72}
                 height={96}
