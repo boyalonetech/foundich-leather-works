@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const images = [
   { id: 1, src: "/d75797127382bb43ca47e161230dbbfe.jpg", alt: "image1" },
-  { id: 2, src: "/e8589163c4e02be787f946269bec8911.jpg", alt: "image2" },
+  { id: 2, src: "/a5cf2475142fa9271439b692db75a630.jpg", alt: "image2" },
   { id: 3, src: "/86e9ddd81e81b2a8ba32deffd122390e.jpg", alt: "image3" },
   { id: 4, src: "/9062a50652fd552448ec72ac8eea2b89.jpg", alt: "image4" },
 ];
