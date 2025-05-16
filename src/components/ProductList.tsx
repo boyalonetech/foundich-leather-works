@@ -20,7 +20,7 @@ const ProductList = async ({
     .queryProducts()
     .eq("collectionIds", categoryId)
     .limit(limit || PRODUCT_PER_PAGE)
-    .find();
+    .find(); 
 
   console.log(res.items[0].price);
 

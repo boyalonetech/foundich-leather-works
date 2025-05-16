@@ -16,11 +16,11 @@ const ProductImages = ({items}:{items:any}) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="">
+    <div>
       <div className="h-[500px] relative">
         <Image
-          src={items[index].url}
-          alt=""
+          src={items[index].image?.url}
+          alt="product"
           fill
           sizes="30vw"
           className="object-cover rounded-md"
@@ -34,8 +34,8 @@ const ProductImages = ({items}:{items:any}) => {
             onClick={() => setIndex(i)}
           >
             <Image
-              src={item.image.url}
-              alt=""
+              src={item.image?.url}
+              alt="product"
               fill
               sizes="30vw"
               className="object-cover rounded-md"

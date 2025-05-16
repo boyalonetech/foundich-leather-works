@@ -12,6 +12,8 @@ const SinglePage = async ({ params }: { params: { slug: string } }) => {
     .eq("slug", params.slug)
     .find();
 
+    console.log(params.slug);
+
   if (!products.items[0]) {
     return notFound();
   }
