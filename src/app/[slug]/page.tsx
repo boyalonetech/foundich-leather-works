@@ -12,13 +12,13 @@ const SinglePage = async ({ params }: { params: { slug: string } }) => {
     .eq("slug", params.slug)
     .find();
 
-    console.log(params.slug);
-
   if (!products.items[0]) {
     return notFound();
   }
 
   const product = products.items[0];
+
+  console.log(product.productOptions);
 
   return (
     <div className="px-4 md:px-8 lg:px-16 xl:32 2xl:64 relative flex flex-col lg:flex-row gap-16 mt-12">
@@ -44,8 +44,19 @@ const SinglePage = async ({ params }: { params: { slug: string } }) => {
           </div>
         )}
         <div className="h-[2px] bg-gray-100 " />
-        <CustomizeProduct />
-        <Add />
+        {product.variants && product.productOptions ? (
+          <CustomizeProduct
+            productId={product._id!}
+            variants={product.variants}
+            productOptions={product.productOptions}
+          />
+        ) : (
+          <Add
+            productId={product._id!}
+            variantId="00000000-0000-0000-0000-000000000000"
+            stockNumber={product.stock?.quantity || 0}
+          />
+        )}
         <div className="h-[2px] bg-gray-100 " />
         <div className="text-sm">
           <h4 className="font-medium mb-4">Title</h4>

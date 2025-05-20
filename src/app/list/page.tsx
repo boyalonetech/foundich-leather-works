@@ -8,7 +8,7 @@ import { Suspense } from "react";
 const ListPage = async ({ searchParams }: { searchParams: any }) => {
   const wixClient = await wixClientServer();
 
-  const cats = await wixClient.collections.getCollectionBySlug(
+  const cat = await wixClient.collections.getCollectionBySlug(
     searchParams.cat || "all-products"
   );
 
@@ -36,11 +36,11 @@ const ListPage = async ({ searchParams }: { searchParams: any }) => {
       {/* FILTER */}
       <Filter />
       {/* PRODUCTS */}
-      <h1 className="mt-12 text-xl font-semibold">Shoes For You!</h1>
+      <h1 className="mt-12 text-xl font-semibold">{cat?.collection?.name} For You!</h1>
       <Suspense fallback={<LoadingScreen />}>
         <ProductList
           categoryId={
-            cats.collection?._id || "00000000-000000-000000-000000000001"
+            cat.collection?._id || "00000000-000000-000000-00000000000"
           }
           searchParams={searchParams}
         />

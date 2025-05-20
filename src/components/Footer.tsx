@@ -9,10 +9,10 @@ const Footer = () => {
         {/* LEFT */}
         <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
           <Link href="/">
-            <div className="text-2xl tracking-wide font-semibold">Foundich</div>
+            <div className="text-2xl tracking-wide font-bold">Foundich</div>
           </Link>{" "}
           <p>10 calabar street, Aba, Abia State, Nigeria</p>
-          <span className="font-semibold ">foundichleatherworks@gmail.com</span>
+          <span className="font-[600] ">foundichleatherworks@gmail.com</span>
           <span className="font-semibold ">+234 706 591 7720</span>
           <div className="flex gap-6">
             <Image src="/facebook.png" alt="icon" width={16} height={16} />

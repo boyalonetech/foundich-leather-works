@@ -19,7 +19,10 @@ const Menu = () => {
       {open && (
         <div className="absolute bg-white text-black left-0 top-20 w-full h-[calc(62vh-80px)] flex flex-col pl-7 justify-center gap-8 text-xl shadow-xl z-10">
           <Link href="/">
-            <span className="flex items-center gap-4">
+            <span
+              className="flex items-center gap-4"
+              onClick={() => setOpen(false)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28px"
@@ -35,7 +38,10 @@ const Menu = () => {
             </span>
           </Link>
           <Link href="/">
-            <span className="flex items-center gap-4">
+            <span
+              className="flex items-center gap-4"
+              onClick={() => setOpen(false)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28px"
@@ -53,7 +59,10 @@ const Menu = () => {
             </span>
           </Link>
           <Link href="/">
-            <span className="flex items-center gap-4">
+            <span
+              className="flex items-center gap-4"
+              onClick={() => setOpen(false)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25px"
@@ -69,7 +78,10 @@ const Menu = () => {
             </span>
           </Link>
           <Link href="/">
-            <span className="flex items-center gap-4">
+            <span
+              className="flex items-center gap-4"
+              onClick={() => setOpen(false)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -86,7 +98,10 @@ const Menu = () => {
             </span>
           </Link>
           <Link href="/">
-            <span className="flex items-center gap-4">
+            <span
+              className="flex items-center gap-4"
+              onClick={() => setOpen(false)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25px"
@@ -102,7 +117,10 @@ const Menu = () => {
             </span>
           </Link>
           <Link href="/">
-            <span className="flex items-center gap-4">
+            <span
+              className="flex items-center gap-4 relative"
+              onClick={() => setOpen(false)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30px"
@@ -114,11 +132,17 @@ const Menu = () => {
                   d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M5.2 4h16.5l-4.975 9H8.1L7 15h12v2H3.625L6.6 11.6L3 4H1V2h3.25z"
                 />
               </svg>
-              Cart(1)
+                Cart
+              <div className="absolute -top-2 right-30 w-4 h-4 bg-found rounded-full text-white text-sm flex items-center justify-center">
+                2
+              </div>
             </span>
           </Link>
           <Link href="/">
-            <span className="flex items-center gap-4">
+            <span
+              className="flex items-center gap-4"
+              onClick={() => setOpen(false)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25px"

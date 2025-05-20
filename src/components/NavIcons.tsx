@@ -2,26 +2,60 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import CartModel from "./CartModel";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+// import CartModal from "./CartModal";
+import { useWixClient } from "@/hooks/useWixClient";
+import Cookies from "js-cookie";
+// import { useCartStore } from "@/hooks/useCartStore";
 
 const NavIcons = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const router = useRouter();
+  const pathName = usePathname();
+
+  const wixClient = useWixClient();
+  const isLoggedIn = wixClient.auth.loggedIn();
 
   // TEMPORARY
-  const isLoggedIn = false;
+  // const isLoggedIn = false;
 
   const handleProfile = () => {
     if (!isLoggedIn) {
       router.push("/login");
+    } else {
+      setIsProfileOpen((prev) => !prev);
     }
-
-    setIsProfileOpen((prev) => !prev);
   };
+
+  // AUTH WITH WIX-MANAGED AUTH
+
+  // const wixClient = useWixClient();
+
+  // const login = async () => {
+  //   const loginRequestData = wixClient.auth.generateOAuthData(
+  //     "http://localhost:3000"
+  //   );
+
+  //   console.log(loginRequestData);
+
+  //   localStorage.setItem("oAuthRedirectData", JSON.stringify(loginRequestData));
+  //   const { authUrl } = await wixClient.auth.getAuthUrl(loginRequestData);
+  //   window.location.href = authUrl;
+  // };
+
+  const handleLogout = async () => {
+    setIsLoading(true);
+    Cookies.remove("refreshToken");
+    const { logoutUrl } = await wixClient.auth.logout(window.location.href);
+    setIsLoading(false);
+    setIsProfileOpen(false);
+    router.push(logoutUrl); 
+  };
+
 
   return (
     <div className="flex items-center gap-4 xl:gap-6 relative">
@@ -44,7 +78,7 @@ const NavIcons = () => {
           2
         </div>
       </div>
-      {isCartOpen && <CartModel />}
+      {/* {isCartOpen && <CartModel />} */}
       <Image
         src="/profile.png"
         alt="profile"
@@ -54,9 +88,9 @@ const NavIcons = () => {
         onClick={handleProfile}
       />
       {isProfileOpen && (
-        <div className="absolute p-4 rounded-md top-12 left-0 text-sm shadow-[0_3px_10px_rgba(0,0,0,0.3)] z-50">
+        <div className="absolute p-4 rounded-md top-12 left-0 bg-white text-sm shadow-[0_3px_10px_rgba(0,0,0,0.3)] z-50">
           <Link href="/">Profile</Link>
-          <div className="mt-2 cursor-pointer">
+          <div className="mt-2 cursor-pointer" onClick={handleLogout}>
             <span className="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +103,7 @@ const NavIcons = () => {
                   <path d="M19.87 7h-2.4l2.66 4H9v2h11.13l-2.67 4h2.4l3.34-5z" />
                 </g>
               </svg>
-              Logout
+              {isLoading ? "Logging out..." : "Logout"}
             </span>
           </div>
         </div>
