@@ -133,7 +133,7 @@ const Menu = () => {
                 />
               </svg>
                 Cart
-              <div className="absolute -top-2 right-30 w-4 h-4 bg-found rounded-full text-white text-sm flex items-center justify-center">
+              <div className="absolute -top-2 right-[20px] w-4 h-4 bg-found rounded-full text-white text-sm flex items-center justify-center">
                 2
               </div>
             </span>

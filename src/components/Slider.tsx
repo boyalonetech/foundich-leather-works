@@ -30,6 +30,7 @@ const slides = [
     url: "/",
     bg: "bg-gradient-to-r from-purple-50 to-blue-50",
   },
+
 ]; 
 
 const Slider = () => {

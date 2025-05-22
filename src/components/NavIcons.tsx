@@ -4,10 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-// import CartModal from "./CartModal";
+import CartModal from "./CartModal";
 import { useWixClient } from "@/hooks/useWixClient";
 import Cookies from "js-cookie";
-// import { useCartStore } from "@/hooks/useCartStore";
+import { useCartStore } from "@/hooks/useCartStore";
 
 const NavIcons = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -53,58 +53,48 @@ const NavIcons = () => {
     const { logoutUrl } = await wixClient.auth.logout(window.location.href);
     setIsLoading(false);
     setIsProfileOpen(false);
-    router.push(logoutUrl); 
+    router.push(logoutUrl);
   };
 
+  const { cart, counter, getCart } = useCartStore();
+
+  useEffect(() => {
+    getCart(wixClient);
+  }, [wixClient, getCart]);
 
   return (
     <div className="flex items-center gap-4 xl:gap-6 relative">
       <Image
         src="/notification.png"
-        alt="notification"
+        alt=""
         width={22}
         height={22}
         className="cursor-pointer"
       />
-      <div className="cursor-pointer relative" onClick={() => setIsCartOpen((prev) => !prev)}>
-        <Image
-          src="/cart.png"
-          alt="cart"
-          width={22}
-          height={22}
-            
-        />
-        <div className="absolute -top-2 -right-2 w-4 h-4 bg-found rounded-full text-white text-sm flex items-center justify-center">
-          2
+      <div
+        className="relative cursor-pointer"
+        onClick={() => setIsCartOpen((prev) => !prev)}
+      >
+        <Image src="/cart.png" alt="" width={22} height={22} />
+        <div className="absolute -top-3 -right-3 w-6 h-6 bg-found rounded-full text-white text-sm flex items-center justify-center scale-[0.7]">
+          {counter}
         </div>
       </div>
-      {/* {isCartOpen && <CartModel />} */}
+      {isCartOpen && <CartModal />}
       <Image
         src="/profile.png"
-        alt="profile"
+        alt=""
         width={22}
         height={22}
         className="cursor-pointer"
-        onClick={handleProfile}
+        // onClick={login}
+        onClick={handleProfile} 
       />
       {isProfileOpen && (
-        <div className="absolute p-4 rounded-md top-12 left-0 bg-white text-sm shadow-[0_3px_10px_rgba(0,0,0,0.3)] z-50">
-          <Link href="/">Profile</Link>
+        <div className="absolute p-4 rounded-md top-12 left-0 bg-white text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20">
+          <Link href="/profile">Profile</Link>
           <div className="mt-2 cursor-pointer" onClick={handleLogout}>
-            <span className="flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20px"
-                height="20px"
-                viewBox="0 0 24 24"
-              >
-                <g fill="currentColor">
-                  <path d="M3 3h11v4h-2V5H5v14h7v-2h2v4H3z" />
-                  <path d="M19.87 7h-2.4l2.66 4H9v2h11.13l-2.67 4h2.4l3.34-5z" />
-                </g>
-              </svg>
-              {isLoading ? "Logging out..." : "Logout"}
-            </span>
+            {isLoading ? "Logging out" : "Logout"}
           </div>
         </div>
       )}
